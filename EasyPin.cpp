@@ -117,6 +117,6 @@ namespace zsoft::tools {
             readValue = digitalRead(_pinNumber);
         }
 
-        return readedValue;
+        return readValue;
     }
 } // end namespace tools
