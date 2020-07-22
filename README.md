@@ -2,6 +2,7 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Zerfoinder/EasyPin)
 ![GitHub All Releases](https://img.shields.io/github/downloads/Zerfoinder/EasyPin/total)
 ![GitHub](https://img.shields.io/github/license/Zerfoinder/EasyPin)
+![Github Arduino Library CI](https://github.com/Zerfoinder/EasyPin/workflows/Github%20Arduino%20Library%20CI/badge.svg)
 
 EasyPin is an Arduino library to simplify access to arduino board pins.
 This library is used to manage in a simple way all Arduino pins. For example, to control the turning on and off of LEDs.
