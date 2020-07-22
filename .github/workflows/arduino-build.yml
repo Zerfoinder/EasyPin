@@ -2,12 +2,22 @@ name: Github Arduino Library CI
 on: push
 jobs:
   build:
-    name: Test compiling examples for UNO
+    name: Test compiling examples for ${{ matrix.arduino.boards-fqbn }}
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        arduino-boards-fqbn: 
+          - arduino:avr:micro
+          - arduino:avr:nano
+          - arduino:avr:uno
+          - arduino:avr:mega
+
+      fail-fast: false
+      
     steps:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Compile all examples
       uses: ArminJo/arduino-test-compile@v2
       with:
-        arduino-board-fqbn: arduino:avr:uno, arduino:avr:mega, arduino:avr:nano, arduino:avr:micro  
+        arduino-board-fqbn: ${{ matrix.arduino-boards-fqbn }}
