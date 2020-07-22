@@ -1,4 +1,4 @@
-name: ArduinoBuild
+name: Github Arduino Library CI
 on: push
 jobs:
   build:
