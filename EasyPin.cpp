@@ -25,7 +25,7 @@
 
 /**
  *  name:         EasyPin
- *  version:      1.1
+ *  version:      0.1.2
  *  Author:       Luis Acosta <zerfoinder@gmail.com>
  *  Date:         2020-07-15
  *  Description:  EasyPin is a library for simplify arduino pins management.
@@ -34,7 +34,7 @@
 #include <Arduino.h>
 #include "EasyPin.h"
 
-namespace zsoft::tools {
+namespace zsoft::io::utilities {
 
     EasyPin::EasyPin(int pinNumber, PinType ptype) {
         _pinNumber = pinNumber;
@@ -119,4 +119,4 @@ namespace zsoft::tools {
 
         return readValue;
     }
-} // end namespace tools
+} // end namespace zsoft::io::utilities

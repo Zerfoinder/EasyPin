@@ -19,13 +19,13 @@
 
 //-----------------------------------------
 // Add using namespace
-using namespace zsoft::tools;
+using namespace zsoft::io::utilities;
 
 //-----------------------------------------
 // Declare an EasyPin object using LED_BUILTIN as pin number, and OUT to define
 // Mode. In order to this test works for any Arduino board, LED_BUILTIN is
 // selected as pin number. Any other pin could be selected.
-EasyPin led(LED_BUILTIN, OUT);
+EasyPin led(LED_BUILTIN, PinType::OUT);
 
 // setup function runs once when you press reset or power the board
 void setup() {
