@@ -1,4 +1,5 @@
 # EasyPin
+
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Zerfoinder/EasyPin)
 ![GitHub All Releases](https://img.shields.io/github/downloads/Zerfoinder/EasyPin/total)
 ![GitHub](https://img.shields.io/github/license/Zerfoinder/EasyPin)
@@ -30,7 +31,7 @@ using namespace zsoft::io::utilities;
 EasyPin led(13);
 
 void setup() {
-    led.init();	// [REQUIRED] Always call init() within setup method.
+    led.init();        // [REQUIRED] Always call init() within setup method.
 }
 
 void loop() {
@@ -40,17 +41,23 @@ void loop() {
     delay(1000);      // wait for a second
 }
 ```
+
 ## Components and functions
+
 ### PinType enum
+
 **PintType** is an **enum** used to define pin type, there are three types: `PinType::IN`, `PinType::OUT` and `PinType::PULLUP`
 
 ### EasyPin Class
+
 #### Example
+
 ```C++
 EasyPin(13, PinType::OUT);
 ```
 
 #### Public methods
+
 | Method | Description |
 | ---------- | ----------- |
 | `EasyPin(int pinNumber, PinType ptype)` | Constructor. |
@@ -64,12 +71,14 @@ EasyPin(13, PinType::OUT);
 | `.readValue();`    | Returns the current `unsigned long` value of Arduino INPUT pin direct from board. |
 
 #### Code documentation
-```C++ 
+
+```C++
 // Constructor
 // param[pinNumber]  Arduino board pin number
 // param[ptype]      PinType
 EasyPin(int pinNumber, PinType ptype);
 ```
+
 ```C++
 // Initialize arduino pin, it should run always in setup section.
 void init();
@@ -83,7 +92,7 @@ void off();
 // Toggle Arduino pin state (From ON to OFF, or from OFF to ON).
 void toggle();
 
-// Set value for an Arduino PWM pin. 
+// Set value for an Arduino PWM pin.
 // note: For PWM pins, accepts values between 0-255.
 void setValue(int value);
 
@@ -100,10 +109,13 @@ int value();
 // from board.
 unsigned long readValue();
 ```
+
 ## Contributing
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 [![donate](https://img.shields.io/badge/donate-PayPal-blue.svg)](https://paypal.me/zerfoinder)
 
 ## License
+
 This library is licensed under [GPLv3](https://www.gnu.org/licenses/quick-guide-gplv3.html).
