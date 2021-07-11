@@ -25,9 +25,9 @@
 
 /**
  *  name:         EasyPin
- *  version:      0.1.2
+ *  version:      0.1.3
  *  Author:       Luis Acosta <zerfoinder@gmail.com>
- *  Date:         2020-07-15
+ *  Date:         2021-07-11
  *  Description:  EasyPin is a library for simplify arduino pins management.
  */
 
